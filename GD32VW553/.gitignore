@@ -1,0 +1,18 @@
+# Salidas de compilación del Nuclei SDK
+build/
+*.elf
+*.bin
+*.hex
+*.o
+*.d
+*.map
+*.dasm
+
+# Logs de OpenOCD
+*.log
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+*.swp
+*~

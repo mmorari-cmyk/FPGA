@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Depurar GD32VW553 (WCH-LinkE)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "serverpath": "${env:HOME}/.local/opt/nuclei/openocd/bin/openocd",
+            "configFiles": ["${workspaceFolder}/.vscode/openocd_debug.cfg"],
+            "gdbPath": "${env:HOME}/.local/opt/nuclei/gcc/bin/riscv64-unknown-elf-gdb-compat",
+            "armToolchainPath": "${env:HOME}/.local/opt/nuclei/gcc/bin",
+            "toolchainPrefix": "riscv64-unknown-elf",
+            "executable": "${workspaceFolder}/gd32_app.elf",
+            "cwd": "${workspaceFolder}",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "Compilar"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    // Cada tarea pasa por tools/gd32.sh, que pone el toolchain de Nuclei primero en el PATH
+    // solo para ese comando (el GCC de la FPGA se llama igual).
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/gd32.sh make all",
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "Grabar",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/gd32.sh make flash",
+            "dependsOn": "Compilar",
+            "problemMatcher": []
+        },
+        {
+            "label": "Monitor serie",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/gd32.sh make monitor",
+            "isBackground": true,
+            "presentation": { "panel": "dedicated", "focus": true, "clear": true },
+            "problemMatcher": []
+        },
+        {
+            "label": "Limpiar",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/gd32.sh make clean",
+            "problemMatcher": []
+        }
+    ]
+}
