@@ -1,0 +1,6 @@
+# Salidas de compilación del Nuclei SDK (el .gitignore de la raíz ya cubre *.elf, *.bin, *.hex, *.log)
+build/
+*.o
+*.d
+*.map
+*.dasm

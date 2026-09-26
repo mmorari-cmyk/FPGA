@@ -1,0 +1,9 @@
+{
+    "VsCodeTaskButtons.showCounter": false,
+    "VsCodeTaskButtons.tasks": [
+        { "label": "|  GD32  $(tools)", "task": "Compilar", "tooltip": "Compilar (make all)" },
+        { "label": "$(zap)", "task": "Grabar", "tooltip": "Compilar y grabar por JTAG (WCH-LinkE)" },
+        { "label": "$(terminal)  |", "task": "Monitor serie", "tooltip": "Ver el UART en /dev/ttyUSB0 a 115200" }
+    ],
+    "files.exclude": { "**/*.o": true, "**/*.d": true, "**/*.map": true, "**/*.dasm": true }
+}
