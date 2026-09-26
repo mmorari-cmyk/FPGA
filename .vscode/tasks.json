@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "FPGA: Compilar y Flashear (make flash)",
+      "label": "Factorial LCD: Compilar y Flashear",
       "type": "shell",
       "command": "make flash",
       "options": {
@@ -21,13 +21,12 @@
       "problemMatcher": []
     },
     {
-      "label": "FPGA: Compilar Bitstream (make bitstream)",
+      "label": "Factorial LCD: Generar Bitstream",
       "type": "shell",
       "command": "make bitstream",
       "options": {
         "cwd": "${workspaceFolder}/RGB_lcd/factorial"
       },
-      "group": "build",
       "presentation": {
         "echo": true,
         "reveal": "always",
@@ -37,24 +36,39 @@
       "problemMatcher": []
     },
     {
-      "label": "FPGA: Detectar Tang Primer 20K (make detect)",
+      "label": "Contador: Compilar y Flashear",
+      "type": "shell",
+      "command": "make flash",
+      "options": {
+        "cwd": "${workspaceFolder}/programas_verilog/contador"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Contador: Generar Bitstream",
+      "type": "shell",
+      "command": "make bitstream",
+      "options": {
+        "cwd": "${workspaceFolder}/programas_verilog/contador"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Tang Primer 20K: Detectar por USB",
       "type": "shell",
       "command": "make detect",
-      "options": {
-        "cwd": "${workspaceFolder}/RGB_lcd/factorial"
-      },
-      "presentation": {
-        "echo": true,
-        "reveal": "always",
-        "focus": false,
-        "panel": "shared"
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "FPGA: Limpiar temporales (make clean)",
-      "type": "shell",
-      "command": "make clean",
       "options": {
         "cwd": "${workspaceFolder}/RGB_lcd/factorial"
       },
