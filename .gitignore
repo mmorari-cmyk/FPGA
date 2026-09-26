@@ -1,0 +1,28 @@
+# ==============================================================================
+# Git Ignore para FPGA (Gowin, Yosys, nextpnr, RISC-V Firmware)
+# ==============================================================================
+
+# Binarios de síntesis y bitstreams de Gowin
+*.fs
+*_synth.json
+*_pnr.json
+
+# Binarios y volcados de Firmware RISC-V
+*.elf
+*.bin
+*.hex
+*.out
+
+# Archivos temporales de compilación y LaTeX
+*.aux
+*.log
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Archivos de sistema operativo y editores
+.DS_Store
+Thumbs.db
+*.swp
+*~

@@ -1,0 +1,75 @@
+// Restricciones físicas (CST) para Tang Primer 20K Dock
+
+// Reloj maestro de la placa (27 MHz)
+IO_LOC "CLK" H11;
+IO_PORT "CLK" PULL_MODE=UP;
+
+// Botón de reset (S0 / T10 en Core Board)
+IO_LOC "RESET" T10;
+IO_PORT "RESET" PULL_MODE=UP;
+
+// Botones de usuario en el Dock (S1=T3, S2=T2, S3=D7)
+IO_LOC "BUTTONS[0]" T3;
+IO_PORT "BUTTONS[0]" PULL_MODE=UP IO_TYPE=LVCMOS18 BANK_VCCIO=1.8;
+IO_LOC "BUTTONS[1]" T2;
+IO_PORT "BUTTONS[1]" PULL_MODE=UP IO_TYPE=LVCMOS18 BANK_VCCIO=1.8;
+IO_LOC "BUTTONS[2]" D7;
+IO_PORT "BUTTONS[2]" PULL_MODE=UP IO_TYPE=LVCMOS18 BANK_VCCIO=1.8;
+
+// LEDs de usuario
+IO_LOC "LEDS[0]" N16;
+IO_PORT "LEDS[0]" DRIVE=8 IO_TYPE=LVCMOS18 BANK_VCCIO=1.8;
+IO_LOC "LEDS[1]" N14;
+IO_PORT "LEDS[1]" DRIVE=8 IO_TYPE=LVCMOS18 BANK_VCCIO=1.8;
+IO_LOC "LEDS[2]" L14;
+IO_PORT "LEDS[2]" DRIVE=8 IO_TYPE=LVCMOS18 BANK_VCCIO=1.8;
+IO_LOC "LEDS[3]" L16;
+IO_PORT "LEDS[3]" DRIVE=8 IO_TYPE=LVCMOS18 BANK_VCCIO=1.8;
+
+// Señales de control de la pantalla RGB LCD (40 pines)
+IO_LOC "lcd_bl" E10;
+IO_PORT "lcd_bl" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_clk" R9;
+IO_PORT "lcd_clk" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_vsync" D14;
+IO_PORT "lcd_vsync" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_hsync" A15;
+IO_PORT "lcd_hsync" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_de" E15;
+IO_PORT "lcd_de" PULL_MODE=UP DRIVE=8;
+
+// Bus de datos de color RGB
+IO_LOC "lcd_b[4]" B14;
+IO_PORT "lcd_b[4]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_b[3]" A14;
+IO_PORT "lcd_b[3]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_b[2]" B13;
+IO_PORT "lcd_b[2]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_b[1]" C12;
+IO_PORT "lcd_b[1]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_b[0]" B12;
+IO_PORT "lcd_b[0]" PULL_MODE=UP DRIVE=8;
+
+IO_LOC "lcd_g[5]" D10;
+IO_PORT "lcd_g[5]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_g[4]" R7;
+IO_PORT "lcd_g[4]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_g[3]" P7;
+IO_PORT "lcd_g[3]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_g[2]" B11;
+IO_PORT "lcd_g[2]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_g[1]" A11;
+IO_PORT "lcd_g[1]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_g[0]" D11;
+IO_PORT "lcd_g[0]" PULL_MODE=UP DRIVE=8;
+
+IO_LOC "lcd_r[4]" N6;
+IO_PORT "lcd_r[4]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_r[3]" N7;
+IO_PORT "lcd_r[3]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_r[2]" N9;
+IO_PORT "lcd_r[2]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_r[1]" N8;
+IO_PORT "lcd_r[1]" PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_r[0]" L9;
+IO_PORT "lcd_r[0]" PULL_MODE=UP DRIVE=8;

@@ -1,0 +1,70 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "FPGA: Compilar y Flashear (make flash)",
+      "type": "shell",
+      "command": "make flash",
+      "options": {
+        "cwd": "${workspaceFolder}/RGB_lcd/factorial"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "FPGA: Compilar Bitstream (make bitstream)",
+      "type": "shell",
+      "command": "make bitstream",
+      "options": {
+        "cwd": "${workspaceFolder}/RGB_lcd/factorial"
+      },
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "FPGA: Detectar Tang Primer 20K (make detect)",
+      "type": "shell",
+      "command": "make detect",
+      "options": {
+        "cwd": "${workspaceFolder}/RGB_lcd/factorial"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "FPGA: Limpiar temporales (make clean)",
+      "type": "shell",
+      "command": "make clean",
+      "options": {
+        "cwd": "${workspaceFolder}/RGB_lcd/factorial"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
