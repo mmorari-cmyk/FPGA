@@ -1,7 +1,6 @@
 # GD32VW553 — Microcontrolador RISC-V
 
-> Carpeta autocontenida: todo lo de la GD32VW553 vive aquí (incluido su `.vscode/` y `.gitignore`).
-> No depende del `Makefile` ni del `.vscode/` de la raíz, que siguen siendo los de la Tang Primer 20K.
+
 
 Segunda placa del curso: **立创·GD32VW553 (LCSC/JLC)**, núcleo Nuclei N300 (RV32IMAFDC) a 160 MHz, 4 MB de flash, Wi-Fi/BLE.
 A diferencia de la Tang Primer 20K, aquí el hardware está fijo en el silicio: se programa en C y se graba por JTAG.
