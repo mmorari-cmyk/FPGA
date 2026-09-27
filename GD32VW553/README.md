@@ -27,7 +27,7 @@ Solo se compila `main.c`. Para usar un ejemplo, cópialo encima de `main.c`.
 | UART (CH340) | USART0: TX PB15, RX PA8 | 115200 baudios; `printf` sale por aquí |
 | JTAG | GND, TDI, TCK, TMS, TDO, 3V3 | conectado al WCH-LinkE |
 
-Wiki oficial: https://wiki.lckfb.com/zh-hans/gd32vw553/
+Wiki oficial: [wiki.lckfb.com — GD32VW553](https://wiki.lckfb.com/zh-hans/gd32vw553/)
 
 ## Cadena de herramientas
 
